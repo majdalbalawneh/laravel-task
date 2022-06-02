@@ -20,10 +20,7 @@
     }
    
     /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
+    
   </style>
 </head>
 <body>
@@ -113,13 +110,6 @@
   </div>
 </div><br><br>
 
-<footer class="container-fluid text-center">
-  <p>Online Candy Store Copyright</p>  
-  <form class="form-inline">Get deals:
-    <input type="email" class="form-control" size="50" placeholder="Email Address">
-    <button type="button" class="btn btn-danger">Sign Up</button>
-  </form>
-</footer>
 
 </body>
 </html>
