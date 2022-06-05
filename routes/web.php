@@ -70,3 +70,7 @@ Route::controller(testController::class)->group(function(){
     Route::get('/about','AboutArray');
 });
 
+
+Route::get('/home', [PostController::class, 'viewdata']);
+Route::get('/home', [PostController::class, 'insert']);
+Route::post('/home', [PostController::class, 'insert']);
