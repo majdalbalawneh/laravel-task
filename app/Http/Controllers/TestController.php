@@ -38,42 +38,6 @@ class TestController extends Controller
 
 }
 
-// ...................
-<?php
 
-namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
-use App\Models\Post;
-
-class PostController extends Controller
-{
-    public function viewdata(){
-$plog=Post::all();
-return view('home',compact('plog'));
-}
-
-
-
-public function update()
-{
-    $student = Post::find(1);
-    $student->name = 'obada';
-    $student->email = 'obada@mail.com';
-    $student->password = '39602580';
-    $student->update();
-    redirect()->back()->with('status','Student Updated Successfully');
-    return view('home');
-}
-
-
-
-public function insert(){
-    $post=new post();
-    $post->title=request('title');
-    $post->title=request('body');
-    $post->save();
-}
-}
 
 

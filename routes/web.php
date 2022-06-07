@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\HTTP\Controllers\TestController;
+use App\HTTP\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -72,5 +73,6 @@ Route::controller(testController::class)->group(function(){
 
 
 Route::get('/home', [PostController::class, 'viewdata']);
-Route::get('/home', [PostController::class, 'insert']);
-Route::post('/home', [PostController::class, 'insert']);
+
+Route::post('form', [form_validate::Class, 'form_validate']);
+Route::view('show','form');

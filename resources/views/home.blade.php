@@ -57,7 +57,11 @@
     </div>
   </div>
 </nav>
-
+@foreach($laravel_task as $item)
+    <li>{{$item->id}}</li>
+    <li>{{$item->title}}</li>
+    <li>{{$item->body}}</li>
+    @endforeach
 <div class="container">    
   <div class="row">
     <div class="col-sm-4">
